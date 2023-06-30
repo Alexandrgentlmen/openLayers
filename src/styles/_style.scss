@@ -1,0 +1,24 @@
+body {
+  font-family: 'Montserrt';
+  background-color: $backgound;
+  color: $text;
+
+}
+
+.map {
+
+  width: 80%;
+  height: 800px;
+}
+
+.container {
+  max-width: 1960px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls {
+  width: 20%;
+}
