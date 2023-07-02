@@ -144,7 +144,7 @@ function getStartedFlying() {
 			map.addLayer(vectorLayer);
 			map.on('singleclick', (e) => {
 				const coordinate = e.coordinate;
-				console.log(coordinate);
+
 				let coordforStart = false;
 				console.log(toLonLat([coordinate[0], coordinate[1]]))
 			});
@@ -166,7 +166,7 @@ function getStartedFlying() {
 				const elapsedTime = time - lastTime;
 				distance = (distance + (speed * elapsedTime) / 1e6) % 2;
 				lastTime = time;
-				debugger
+
 				const currentCoordinate = route.getCoordinateAt(
 					distance > 1 ? 2 - distance : distance
 				);
