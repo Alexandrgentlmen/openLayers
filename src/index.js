@@ -54,11 +54,11 @@ map.addLayer(vectorLayer);
 let direction =
 	function getCoordinateToMove(x, y, elapsedTime, speed, direction) {
 
-		let speedX = speed * sinA;
-		let speedY = speed * cosA;
+		let speedX = speed * sin(A);
+		let speedY = speed * cos(A);
 
-		let nextX = x + (speedX * elapsedTime);
-		let nextY = y + (speedY * elapsedTime);
+		let nextX = (x + (speedX * elapsedTime) / 1e6);
+		let nextY = (y + (speedY * elapsedTime) / 1e6);
 		return [nextX, nextY]
 	}
 
